@@ -31,6 +31,18 @@ a {
     transition: all .35s;
 }
 
+.font-size-small {
+    font-size: 12px;
+}
+
+.display-inline {
+    display:inline;
+}
+
+.text-color-white {
+    color: #fff;
+}
+
 a:hover,
 a:focus {
     color: #eb3812;
