@@ -26,6 +26,13 @@ hr.secondary {
     border-width: 3px;
 }
 
+hr.tertiary {
+    max-width: 50px;
+    border-color: #b3b3b3;
+    border-width: 3px;
+}
+
+
 
 hr.light {
     border-color: #fff;
