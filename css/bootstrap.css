@@ -4207,6 +4207,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
+     background-color: #333;
   }
   .navbar-collapse.in {
     overflow-y: visible;
