@@ -64,11 +64,11 @@ p {
 }
 
 .bg-primary {
-    background-color: #000;
+    background-color: #fff;
 }
 
 .bg-dark {
-    color: #fff;
+    color: #333;
     background-color: #222;
 }
 
