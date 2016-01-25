@@ -80,6 +80,12 @@ p {
     height: 565px;
 }
 
+# Contact {
+    color: #fff;
+    background-color: #6BB4FF;
+    height: 565px;
+}
+
 .text-faded {
     color: rgba(255,255,255,.7);
 }
