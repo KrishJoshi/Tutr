@@ -54,7 +54,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Droid Sans',Arial,sans-serif;
+    font-family: 'Droid Sans Bold',Arial,sans-serif;
 }
 
 p {
@@ -190,7 +190,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    background-color:#6BB4FF;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
