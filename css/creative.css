@@ -65,7 +65,11 @@ p {
 
 .bg-primary {
     background-color: #fff;
-    color:#333;
+    height: 565px;
+}
+
+.bg-secondary {
+    background-color: #b3b3b3;
     height: 565px;
 }
 
