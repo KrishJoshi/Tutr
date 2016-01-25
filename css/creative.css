@@ -14,6 +14,12 @@ body {
     font-family: 'Open sans',Arial,sans-serif;
 }
 
+.text-vertical-centre{
+    font-size:30px 
+    display: inline-block;
+    vertical-align: middle;
+	}
+
 hr.primary {
     max-width: 50px;
     border-color: #6BB4FF;
