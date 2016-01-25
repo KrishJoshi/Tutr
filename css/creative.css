@@ -32,7 +32,11 @@ hr.tertiary {
     border-width: 3px;
 }
 
-
+hr.quaternary {
+    max-width: 50px;
+    border-color: #666666;
+    border-width: 3px;
+}
 
 hr.light {
     border-color: #fff;
