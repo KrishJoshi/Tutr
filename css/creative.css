@@ -81,7 +81,6 @@ p {
 }
 
 #Contact {
-header {
     position: relative;
     width: 100%;
     min-height: auto;
@@ -93,7 +92,6 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
 }
 
 .text-faded {
