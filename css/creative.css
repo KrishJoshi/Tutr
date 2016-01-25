@@ -14,11 +14,18 @@ body {
     font-family: 'Open sans',Arial,sans-serif;
 }
 
-hr {
+hr.primary {
     max-width: 50px;
     border-color: #6BB4FF;
     border-width: 3px;
 }
+
+hr.primary {
+    max-width: 50px;
+    border-color: #fff;
+    border-width: 3px;
+}
+
 
 hr.light {
     border-color: #fff;
