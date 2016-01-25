@@ -127,7 +127,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #000;
+    color: #6BB4FF;
 }
 
 .navbar-default .nav > li>a,
@@ -135,7 +135,7 @@ aside {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    color: #000;
+    color: #6BB4FF;
 }
 
 .navbar-default .nav > li>a:hover,
