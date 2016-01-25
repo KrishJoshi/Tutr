@@ -66,24 +66,24 @@ p {
 .bg-primary {
     background-color: #fff;
     color: #333;
-    height: 565px;
+    min-height: 565px;
 }
 
 #Our_tutors {
     background-color: #b3b3b3;
-    height: 565px;
+    min-height: 565px;
 }
 
 .bg-dark {
     color: #fff;
     background-color: #666666;
-    height: 565px;
+    min-height: 565px;
 }
 
 #Contact {
     position: relative;
     width: 100%;
-    min-height: auto;
+    min-height: 100%;
     text-align: center;
     color: #fff;
     background-color:#6BB4FF;
