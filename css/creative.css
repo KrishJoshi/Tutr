@@ -17,6 +17,7 @@ body {
 table, tr, td {  
     height: 60px;
     width: 300px;
+    padding: 30px;
 }
 
 .text-valign{
