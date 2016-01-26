@@ -14,10 +14,12 @@ body {
     font-family: 'Open sans',Arial,sans-serif;
 }
 
-td {  
+table, tr, td {  
     border:0; 
+    padding:0;
+    margin:0;
     height: 50px;
-     vertical-align: middle;
+    vertical-align: middle;
 }
 
 .text-vertical-centre{
