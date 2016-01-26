@@ -329,8 +329,8 @@ header .header-content .header-content-inner p {
 }
 
 @media(min-width:992px) {
-    .service-box {
-        margin: 20px auto 0;
+    .service-bo, .big-service-box {
+    margin: 20px auto 0;
     }
 }
 
