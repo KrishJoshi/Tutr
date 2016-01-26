@@ -16,6 +16,7 @@ body {
 
 table, tr, td {  
     height: 75px;
+    width: 100px;
 }
 
 .text-valign{
@@ -23,6 +24,9 @@ table, tr, td {
     padding:0!important;
     margin:0!important;
     vertical-align: middle;
+    text-align: center;
+    font-family: 'Open Sans Bold',Arial,sans-serif;
+    
     
 }
 
