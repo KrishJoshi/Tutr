@@ -18,14 +18,15 @@ table, tr, td {
     border:0; 
     padding:0;
     margin:0;
-    height: 100px;
+    height: 75px;
     vertical-align: middle;
 }
 
-.text-vertical-centre{
-    font-size:40px 
-    vertical-align: middle;
-	}
+.FUCK{
+    border:0; 
+    padding:0;
+    margin:0;
+}
 
 hr.primary {
     max-width: 50px;
