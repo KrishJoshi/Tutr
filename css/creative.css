@@ -18,6 +18,7 @@ table, tr, td {
     height: 60px;
     width: 300px;
     padding: 10px;
+    margin: 0 auto;
 }
 
 .text-valign{
