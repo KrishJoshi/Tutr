@@ -84,7 +84,6 @@ a:focus {
 }
 
 h1,
-h2,
 h4,
 h5,
 h6 {
@@ -92,10 +91,17 @@ h6 {
 
 }
 
-h3{
+h2{
     font-family: 'Droid Sans Bold,'sans-serif;
     font-size: 48px;
     font-weight: 600;
+    
+}
+
+h3{
+    font-family: 'Droid Sans Bold,'sans-serif;
+    font-size: 30px;
+    font-weight: 500;
     
 }
 
