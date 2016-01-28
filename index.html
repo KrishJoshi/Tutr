@@ -523,11 +523,17 @@
 
     
                 <script> 
-                $(document).ready(function(){
+
     $("#tutor_btn").click(function(){
-        $("#tutor_form").slideToggle("slow");
-    });
-                });
+        if ( $("#tutor_form").is( ":hidden" ) ) {
+         $( "#tutor_form").slideDown( "slow" );
+          } else {
+             $("#tutor_form").slideToggle("slow");
+      }
+});
+
+    
+
 </script>
                 
 
