@@ -527,9 +527,9 @@
                     $(".tutor_btn").click(function(){
                         
                         
-                        var pupil_form = $('#pupil_form');
                        
-                        pupil_form.slideUp(1500, function() {$(this).detach();});
+                        x = $('#pupil_form').detach().slideUp();   
+        
                        
                         $('#tutor_form').appendTo($("#anchor")).slideDown("slow");
                         
@@ -539,9 +539,9 @@
                     <script>
                     $(".pupil_btn").click(function(){
                         
-                        var tutor_form = $('#tutor_form');
                         
-                        tutor_form.slideUp(1500, function() {$('#tutor_form').detach();});
+                        y = $('#tutor_form').detach().slideUp();   
+                    
                  
                         $('#pupil_form').appendTo($("#anchor")).slideDown("slow");
                     });
