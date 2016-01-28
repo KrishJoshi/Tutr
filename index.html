@@ -243,7 +243,7 @@
  
                 <div ID="anchor"></div>
  
-<form class="form-horizontal" ID="tutor_form" style="display: none;">
+<form class="form-horizontal" ID="tutor_form" style="height:0px">
 <fieldset>
 
 <!-- Form Name -->
@@ -374,7 +374,7 @@
 
 
 
-  <form class="form-horizontal" ID="pupil_form" style="display: none;">
+  <form class="form-horizontal" ID="pupil_form" style="height:0px">
 <fieldset>
 
 <!-- Form Name -->
@@ -522,30 +522,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/jquery.js"></script>
     
-    
-                    <script>
-                    $(".tutor_btn").click(function(){
-                        
-                        
-                        
-                      
-                       
-                        $('#tutor_form').slideDown();
-                        
-                    });
-                    </script>
-                    
-                    <script>
-                    $(".pupil_btn").click(function(){
-                        
-                          if ( $('#pupil_form').is( ":hidden" ) && $('#tutor_form').is( ":visible" )) {
-                        $('#pupil_form').slideDown( "slow" );
-                            }
-
-                         
-                        
-                    });
-                    </script>
+        <script>
+        $(document).ready(function(){
+            $("#tutor_btn").click(function(){
+               $("#pupil_form").animate({height: "0px"},1000,function(){
+            $("#tutor_form").animate({height: "300px"},1000);    
+        });
+            });
+            $("#pupil_btn").click(function(){
+              $("#tutor_form").animate({height: "0px"},1000,function(){
+            $("#pupil_form").animate({height: "300px"},1000);    
+        });
+            });
+        });
+        </script>
                 
                 
 
