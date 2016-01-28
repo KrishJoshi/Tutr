@@ -541,12 +541,23 @@ $('.js-student-btn').click(function () {
 		tutorTab.slideUp(function (){
     			studentTab.slideDown();
     });
+
+	
+	$('html,body').animate({
+        scrollTop: $(".student-tab").offset().top},
+        'slow');
+	
 });
 
 $('.js-tutor-btn').click(function () {
 		studentTab.slideUp(function (){
     			tutorTab.slideDown();
     });
+    
+    
+	$('html,body').animate({
+        scrollTop: $(".tutor-tab").offset().top},
+        'slow');
 });
     
 
