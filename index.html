@@ -528,10 +528,10 @@
                         
                         
                        
-                        x = $('#pupil_form').detach().slideUp();   
+                        x = $('#pupil_form').slideUp().detach();   
         
                        
-                        $('#tutor_form').appendTo($("#anchor")).slideDown("slow");
+                        $(y).appendTo($("#anchor")).slideDown("slow");
                         
                     });
                     </script>
@@ -540,10 +540,10 @@
                     $(".pupil_btn").click(function(){
                         
                         
-                        y = $('#tutor_form').detach().slideUp();   
+                        y = $('#tutor_form').slideUp().detach();   
                     
                  
-                        $('#pupil_form').appendTo($("#anchor")).slideDown("slow");
+                        $(x).appendTo($("#anchor")).slideDown("slow");
                     });
                     </script>
                 
