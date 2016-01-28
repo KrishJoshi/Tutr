@@ -14,6 +14,12 @@ body {
     font-family: 'Open sans',Arial,sans-serif;
 }
 
+
+legend {
+  color: white;
+  border: none; 
+}
+
 table, tr, td {  
     height: 60px;
     width: 300px;
