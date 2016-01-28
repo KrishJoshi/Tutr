@@ -239,6 +239,15 @@
                
                 
                 <button onclick="show_pupil_form()">The time is?</button>
+                
+                <button class="btn2">Slide down</button>
+                <script>
+                $(document).ready(function(){
+                    $(".btn2").click(function(){
+                        $("#pupil_form").slideDown();
+                    });
+                });
+                </script>
 
               <form class="form-horizontal" ID="pupil_form" style="display: none;">
 <fieldset>
