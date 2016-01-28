@@ -240,11 +240,130 @@
 <div class="btn js-student-btn">Student</div>
 <div class="btn js-tutor-btn">Tutor</div>
 
- <div class="student-tab">student</div>
- <div class="tutor-tab ">tutor</div>
+ <div class="student-tab"><form class="form-horizontal" ID="pupil_form">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Form Name</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="parent_name">Parent's Name</label>  
+  <div class="col-md-4">
+  <input id="parent_name" name="parent_name" type="text" placeholder="" class="form-control input-md" required="">
     
- 
-<form class="form-horizontal" ID="tutor_form" style="visibility:hidden;" >
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="pupil_age">Pupil's Name</label>  
+  <div class="col-md-4">
+  <input id="pupil_age" name="pupil_age" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="pupils_age">Pupil's Age</label>  
+  <div class="col-md-4">
+  <input id="pupils_age" name="pupils_age" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="subject">Subject Wishing to be Taught</label>  
+  <div class="col-md-4">
+  <input id="subject" name="subject" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="level">Level</label>  
+  <div class="col-md-4">
+  <input id="level" name="level" type="text" placeholder="e.g. GCSE" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Contact email</label>  
+  <div class="col-md-4">
+  <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="phone"> Phone Number</label>  
+  <div class="col-md-4">
+  <input id="phone" name="phone" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="address1">House name/number</label>  
+  <div class="col-md-4">
+  <input id="address1" name="address1" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="address2">Street name</label>  
+  <div class="col-md-4">
+  <input id="address2" name="address2" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="city">Town / City</label>  
+  <div class="col-md-4">
+  <input id="city" name="city" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="postcode">Postcode</label>  
+  <div class="col-md-4">
+  <input id="postcode" name="postcode" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="addinfo"> Additional Information:</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="addinfo" name="addinfo">e.g. preferred method of contact, special circumstances</textarea>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form></div>
+ <div class="tutor-tab "><form class="form-horizontal" ID="tutor_form" >
 <fieldset>
 
 <!-- Form Name -->
@@ -371,132 +490,13 @@
 </div>
 
 </fieldset>
-</form>
-
-
-  <form class="form-horizontal" ID="pupil_form" style="display:none;">
-<fieldset>
-
-<!-- Form Name -->
-<legend>Form Name</legend>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="parent_name">Parent's Name</label>  
-  <div class="col-md-4">
-  <input id="parent_name" name="parent_name" type="text" placeholder="" class="form-control input-md" required="">
+</form></div>
     
-  </div>
-</div>
+ 
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="pupil_age">Pupil's Name</label>  
-  <div class="col-md-4">
-  <input id="pupil_age" name="pupil_age" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
-</div>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="pupils_age">Pupil's Age</label>  
-  <div class="col-md-4">
-  <input id="pupils_age" name="pupils_age" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
-</div>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="subject">Subject Wishing to be Taught</label>  
-  <div class="col-md-4">
-  <input id="subject" name="subject" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="level">Level</label>  
-  <div class="col-md-4">
-  <input id="level" name="level" type="text" placeholder="e.g. GCSE" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="email">Contact email</label>  
-  <div class="col-md-4">
-  <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="phone"> Phone Number</label>  
-  <div class="col-md-4">
-  <input id="phone" name="phone" type="text" placeholder="" class="form-control input-md" required="">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="address1">House name/number</label>  
-  <div class="col-md-4">
-  <input id="address1" name="address1" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="address2">Street name</label>  
-  <div class="col-md-4">
-  <input id="address2" name="address2" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="city">Town / City</label>  
-  <div class="col-md-4">
-  <input id="city" name="city" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="postcode">Postcode</label>  
-  <div class="col-md-4">
-  <input id="postcode" name="postcode" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="addinfo"> Additional Information:</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="addinfo" name="addinfo">e.g. preferred method of contact, special circumstances</textarea>
-  </div>
-</div>
-
-<!-- Button -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="submit"></label>
-  <div class="col-md-4">
-    <button id="submit" name="submit" class="btn btn-primary">Submit</button>
-  </div>
-</div>
-
-</fieldset>
-</form>
+  
 
                 
                 
