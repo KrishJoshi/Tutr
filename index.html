@@ -538,12 +538,10 @@
                     <script>
                     $(".pupil_btn").click(function(){
                         
-                          if ( $('#pupil_form').is( ":hidden" ) ) {
+                          if ( $('#pupil_form').is( ":hidden" ) && $('#tutor_form').is( ":visible" )) {
                         $('#pupil_form').slideDown( "slow" );
                             }
-                          if ( $('#tutor_form').is( ":visible" ) ) {
-                        $('#pupil_form').slideDown( "slow" );
-                            }    
+
                          
                         
                     });
