@@ -528,10 +528,11 @@
                         
                          $('#pupil_form').slideUp();
                        
-                        x = $('#pupil_form').detach();   
+                       setTimeout(function(){ $('#pupil_form').detach();},3000);
+                      
         
                        
-                        $(y).appendTo($("#anchor")).slideDown("slow");
+                        $('#tutor_form').appendTo($("#anchor")).slideDown("slow");
                         
                     });
                     </script>
@@ -541,10 +542,12 @@
                         
                          $('#tutor_form').slideUp();
                         
-                        y = $('#tutor_form').detach();   
+          
                     
-                 
-                        $(x).appendTo($("#anchor")).slideDown("slow");
+                                        setTimeout(function(){ $('#pupil_form').detach();},3000);
+                                        
+                                        
+                        $('#pupil_form').appendTo($("#anchor")).slideDown("slow");
                     });
                     </script>
                 
