@@ -48,7 +48,7 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">tutr.</a>
             </div>
-
+            
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -237,9 +237,9 @@
                     <hr class="quaternary">
                     <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
                
-                <button class="pupil_btn">Students</button>
-                
-                <button class="tutor_btn">Tutors</button>
+<div class="btn js-student-btn">Student</div>
+<div class="btn js-tutor-btn">Tutor</div>
+
  
     
  
@@ -524,14 +524,23 @@
     
                 <script> 
 
-    $("#tutor_btn").click(function(){
-        if ( $("#tutor_form").is( ":hidden" ) ) {
-         $( "#tutor_form").slideDown( "slow" );
-          } else {
-             $("#tutor_form").slideToggle("slow");
-      }
+var studentTab = $('.student-tab');
+var tutorTab = $('.tutor-tab');
+
+tutorTab.hide();
+studentTab.hide();
+
+$('.js-student-btn').click(function () {
+		tutorTab.slideUp(function (){
+    			studentTab.slideDown();
+    });
 });
 
+$('.js-tutor-btn').click(function () {
+		studentTab.slideUp(function (){
+    			tutorTab.slideDown();
+    });
+});
     
 
 </script>
