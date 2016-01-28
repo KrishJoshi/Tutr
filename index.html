@@ -526,9 +526,9 @@
                     <script>
                     $(".tutor_btn").click(function(){
                         
-                        
+                         $('#pupil_form').slideUp();
                        
-                        x = $('#pupil_form').slideUp().detach();   
+                        x = $('#pupil_form').detach();   
         
                        
                         $(y).appendTo($("#anchor")).slideDown("slow");
@@ -539,8 +539,9 @@
                     <script>
                     $(".pupil_btn").click(function(){
                         
+                         $('#tutor_form').slideUp();
                         
-                        y = $('#tutor_form').slideUp().detach();   
+                        y = $('#tutor_form').detach();   
                     
                  
                         $(x).appendTo($("#anchor")).slideDown("slow");
