@@ -50,3 +50,6 @@
 })(jQuery); // End of use strict
 
 
+function show_pupil_form() {
+    document.getElementById("pupil_form").style.display = "inline";
+}
