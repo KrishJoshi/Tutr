@@ -483,7 +483,8 @@ fieldset[disabled] .btn-default.active {
     background-color: #222;
 }
 
-.btn-primary {
+.btn-primary,
+ .js-student-btn{
     border-color: #c71585;
     color: #fff;
     background-color: #E4287C;
@@ -492,6 +493,11 @@ fieldset[disabled] .btn-default.active {
     transition: all .35s;
 }
 
+.js-student-btn:hover,
+.js-student-btn:focus,
+.js-student-btn:active,
+.js-student-btn.focus,
+.js-student-btn.active,
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus,
