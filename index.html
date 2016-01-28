@@ -526,8 +526,11 @@
                         
                         
                         var pupil_form = $('#pupil_form');
-                        pupil_form.slideUp(1500, 'swing', function() {$(this).detach();});
-                        $('#tutor_form').slideDown(1500, 'swing');
+                       
+                        pupil_form.slideUp(1500, function() {$(this).detach();});
+                       
+                        $('#tutor_form').appendTo($(".tutor_btn")).slideDown("fast");
+                        
                     });
                     </script>
                     
@@ -535,8 +538,10 @@
                     $(".pupil_btn").click(function(){
                         
                         var tutor_form = $('#tutor_form');
-                        tutor_form.slideUp(1500, 'swing', function() {$('#tutor_form').detach();});
-                        $('#pupil_form').slideDown(1500, 'swing');
+                        
+                        tutor_form.slideUp(1500, function() {$('#tutor_form').detach();});
+                 
+                        $('#pupil_form').appendTo($(".pupil_btn")).slideDown("fast");
                     });
                     </script>
                 
