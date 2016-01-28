@@ -544,7 +544,7 @@ $('.js-student-btn').click(function () {
 
 	
 	$('html,body').animate({
-        scrollTop: $(".student-tab").offset({ top: 50})},
+        scrollTop: $(".student-tab").offset().top},
         'slow');
 	
 });
@@ -556,7 +556,7 @@ $('.js-tutor-btn').click(function () {
     
     
 	$('html,body').animate({
-        scrollTop: $(".tutor-tab").offset({ top: 50})},
+        scrollTop: $(".tutor-tab").offset(()).top},
         'slow');
 });
     
