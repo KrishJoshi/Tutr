@@ -242,8 +242,8 @@
                 <button class="tutor_btn">Tutors</button>
  
     
-     <div ID="anchor" style="visibility:hidden;">
-<form class="form-horizontal" ID="tutor_form" >
+ 
+<form class="form-horizontal" ID="tutor_form" style="visibility:hidden;" >
 <fieldset>
 
 <!-- Form Name -->
@@ -371,9 +371,8 @@
 
 </fieldset>
 </form>
-</div>
 
-     <div ID="anchor2" style="visibility:hidden;">
+
   <form class="form-horizontal" ID="pupil_form" style="display:none;">
 <fieldset>
 
@@ -497,7 +496,7 @@
 
 </fieldset>
 </form>
-</div>
+
                 
                 
                     
@@ -526,7 +525,7 @@
                 <script> 
                 $(document).ready(function(){
     $("#tutor_btn").click(function(){
-        $("#anchor").slideToggle("slow");
+        $("#tutor_form").slideToggle("slow");
     });
                 });
 </script>
