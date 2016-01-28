@@ -237,10 +237,140 @@
                     <hr class="quaternary">
                     <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
                
+                <button class="pupil_btn">Students</button>
                 
-                <button onclick="show_pupil_form()">The time is?</button>
-                
-                <button class="btn2">Slide down</button>
+                <button class="tutor_btn">Tutors</button>
+
+<form class="form-horizontal" ID="tutor_form" style="display: none;">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Form Name</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name">Full name</label>  
+  <div class="col-md-4">
+  <input id="name" name="name" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="DoB">Date of Birth</label>  
+  <div class="col-md-4">
+  <input id="DoB" name="DoB" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Email</label>  
+  <div class="col-md-4">
+  <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="phone">Phone Number</label>  
+  <div class="col-md-4">
+  <input id="phone" name="phone" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="address1">House Name/Number</label>  
+  <div class="col-md-4">
+  <input id="address1" name="address1" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="address2">Street Name</label>  
+  <div class="col-md-4">
+  <input id="address2" name="address2" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="city">Town/City</label>  
+  <div class="col-md-4">
+  <input id="city" name="city" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="postcode">Post Code</label>  
+  <div class="col-md-4">
+  <input id="postcode" name="postcode" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="subject"> Subjects / Levels</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="subject" name="subject">Please enter the subjects and levels you wish to tutor</textarea>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="experience">Past Experience</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="experience" name="experience">Please enter your past experience.</textarea>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="situation">Current Situation</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="situation" name="situation">E.g. Employment / Study etc</textarea>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="availability">Your Availability</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="availability" name="availability">When are you available to tutor?</textarea>
+  </div>
+</div>
+
+<!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="cv">CV</label>
+  <div class="col-md-4">
+    <input id="cv" name="cv" class="input-file" type="file">
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
 
               <form class="form-horizontal" ID="pupil_form" style="display: none;">
 <fieldset>
@@ -392,7 +522,15 @@
     
     
                     <script>
-                    $(".btn2").click(function(){
+                    $(".tutor_btn").click(function(){
+                        $('#pupil_form').slideUp(1500, 'swing');
+                        $('#tutor_form').slideDown(1500, 'swing');
+                    });
+                    </script>
+                    
+                    <script>
+                    $(".pupil_btn").click(function(){
+                        $('#tutor_form').slideUp(1500, 'swing');
                         $('#pupil_form').slideDown(1500, 'swing');
                     });
                     </script>
