@@ -51,5 +51,5 @@
 
 
 function show_pupil_form() {
-    document.getElementById("pupil_form").style.display = "inline";
+    document.getElementById("pupil_form").slideDown('slow');
 }
