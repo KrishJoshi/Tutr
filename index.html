@@ -526,8 +526,8 @@
                         
                         
                         var pupil_form = $('#pupil_form');
-                        pupil_form.slideUp(1500, 'swing', function() {$(this).remove();});
-                        $('#tutor_form').slideDown(1500, 'swing');
+                        pupil_form.slideUp(1500, 'swing', function() {$(this).detach();});
+                        $('#tutor_form').slideDown(function() {$(this).appendTo("body");}, 1500, 'swing');
                     });
                     </script>
                     
@@ -535,8 +535,8 @@
                     $(".pupil_btn").click(function(){
                         
                         var tutor_form = $('#tutor_form');
-                        tutor_form.slideUp(1500, 'swing', function() {$(this).remove();});
-                        $('#pupil_form').slideDown(1500, 'swing');
+                        tutor_form.slideUp(1500, 'swing', function() {$(this).detach();});
+                        $('#pupil_form').slideDown(function() {$(this).appendTo("body");},1500, 'swing');
                     });
                     </script>
                 
