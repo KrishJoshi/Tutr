@@ -571,7 +571,7 @@ fieldset[disabled] .btn-primary.active {
 
 .btn {
     border: 0;
-    padding: 6px 12px;
+    padding: 8px 14px;
     border-radius: 300px;
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
@@ -579,7 +579,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-    padding: 12px 25px;
+    padding: 10px 18px;
 }
 
 ::-moz-selection {
