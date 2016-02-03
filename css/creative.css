@@ -11,12 +11,12 @@ body {
 }
 
     fieldset, legend {
-        position:relative; top:15px;
+        position:relative; top:30px;
     }
 
 @media(min-width:768px){
     fieldset, legend {
-        position:relative; top:30px;
+        position:relative; top:15px;
     }
 }
 
