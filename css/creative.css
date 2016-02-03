@@ -43,7 +43,7 @@ table, tr, td {
     margin:0!important;
     vertical-align: middle;
     text-align: center;
-    font-family: 'Open Sans Bold',Arial,sans-serif;
+    font-family: 'Open Sans',Arial,sans-serif;
     
     
 }
@@ -105,7 +105,8 @@ h4,
 h5,
 h6 {
     font-family: 'Droid Sans',sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size:90px;
 }
 
 h2{
@@ -186,7 +187,7 @@ aside {
 }
 
 .navbar-default .navbar-header .navbar-brand {
-    font-family: 'Droid Sans Bold','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Droid Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
     color: #6BB4FF;
 }
