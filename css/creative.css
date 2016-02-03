@@ -10,6 +10,16 @@ body {
     height: 100%;
 }
 
+    fieldset, legend {
+        position:relative; top:15px;
+    }
+
+@media(min-width:768px){
+    fieldset, legend {
+        position:relative; top:30px;
+    }
+}
+
 body {
     font-family: 'Open sans',Arial,sans-serif;
 }
