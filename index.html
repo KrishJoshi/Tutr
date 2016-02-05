@@ -545,6 +545,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/jquery.js"></script>
 
+
+<script>
+var $pupil_form = $('#pupil_form');
+$pupil_form.submit(function(e) {
+	e.preventDefault();
+	$.ajax({
+		url: '//formspree.io/melpjackson@gmail.com',
+		method: 'POST',
+		data: $(this).serialize(),
+		dataType: 'json',
+		beforeSend: function() {
+			$pupil_form.append('<div class="alert alert--loading">Sending message…</div>');
+		},
+		success: function(data) {
+			$pupil_form.find('.alert--loading').hide();
+			$pupil_form.append('<div class="alert alert--success">Message sent!</div>');
+		},
+		error: function(err) {
+			$pupil_form.find('.alert--loading').hide();
+			$pupil_form.append('<div class="alert alert--error">Ops, there was an error.</div>');
+		}
+	});
+});
+</script>
     
                 <script> 
 
