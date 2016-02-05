@@ -11,6 +11,12 @@ body {
     height: 100%;
 }
 
+.modal-wrapper{
+    min-height:100%;
+    opacity:0.5;
+    background-color: lightblue;
+}    
+
     fieldset, legend {
         position:relative; top:30px;
     }
