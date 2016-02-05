@@ -538,6 +538,27 @@
             </div>
         </div>
     </section>
+    
+    
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
 
     <!-- jQuery -->
     
@@ -548,6 +569,8 @@
 
 <script>
 var $pupil_form = $('#pupil_form');
+var modal = document.getElementById('myModal');
+
 $pupil_form.submit(function(e) {
 	e.preventDefault();
 	$.ajax({
@@ -560,8 +583,8 @@ $pupil_form.submit(function(e) {
 		},
 		success: function(data) {
 			$pupil_form.find('.alert--loading').hide();
-			$pupil_form.append('<div class="alert alert--success modal fade">Message sent!</div>');
-			
+			$pupil_form.append('<div class="alert alert--success">Message sent!</div>');
+			modal.style.display = "block";
 		},
 		error: function(err) {
 			$pupil_form.find('.alert--loading').hide();
