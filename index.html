@@ -560,7 +560,8 @@ $pupil_form.submit(function(e) {
 		},
 		success: function(data) {
 			$pupil_form.find('.alert--loading').hide();
-			$pupil_form.append('<div class="alert alert--success">Message sent!</div>');
+			$pupil_form.append('<div class="alert alert--success class="modal fade">Message sent!</div>');
+			
 		},
 		error: function(err) {
 			$pupil_form.find('.alert--loading').hide();
