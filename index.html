@@ -554,6 +554,7 @@
   </div>
 </div>
 
+
     <!-- jQuery -->
     
       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -575,15 +576,11 @@ $pupil_form.submit(function(e) {
 		data: $(this).serialize(),
 		dataType: 'json',
 		beforeSend: function() {
-			$pupil_form.append('<div class="alert alert--loading">Sending message…</div>');
 		},
 		success: function(data) {
-			$pupil_form.find('.alert--loading').hide();
-			$pupil_form.append('<div class="alert alert--success">Message sent!</div>');
 			$('#myModal').modal('show');
 		},
 		error: function(err) {
-			$pupil_form.find('.alert--loading').hide();
 			$pupil_form.append('<div class="alert alert--error">Ops, there was an error.</div>');
 		}
 	});
