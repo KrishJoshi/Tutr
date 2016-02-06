@@ -578,7 +578,8 @@ $pupil_form.submit(function(e) {
 		beforeSend: function() {
 		},
 		success: function(data) {
-			$('#myModal').modal(){$('.modal-content').addClass('modal-content-moved');};
+			$('#myModal').modal();
+			$('.modal-content').addClass('modal-content-moved');
 		},
 		error: function(err) {
 			$pupil_form.append('<div class="alert alert--error">Ops, there was an error.</div>');
