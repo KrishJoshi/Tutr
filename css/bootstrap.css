@@ -5921,6 +5921,10 @@ button.close {
   margin:auto;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
           box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    -webkit-transition: position 1s linear;
+       -o-transition: position 1s linear;
+          transition: position 1s linear;        
+          
 }
 .modal-backdrop {
   position: fixed;
