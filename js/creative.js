@@ -4,7 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-(function($) {
+ (function($) {
 
 
     "use strict"; // Start of use strict
@@ -35,7 +35,7 @@
             minFontSize: '35px',
             maxFontSize: '65px'
         }
-    );
+        );
 
     // Offset for Main Navigation
     $('#mainNav').affix({
@@ -47,9 +47,82 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
-})(jQuery); // End of use strict
+
+
+
+var $pupil_form = $('#pupil_form');
+var modal = document.getElementById('myModal');
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+
+$pupil_form.submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+        url: '//formspree.io/melpjackson@gmail.com',
+        method: 'POST',
+        data: $(this).serialize(),
+        dataType: 'json',
+        beforeSend: function() {
+        },
+        success: function(data) {
+            $('#myModal').modal();
+        },
+        error: function(err) {
+            $pupil_form.append('<div class="alert alert--error">Ops, there was an error.</div>');
+        }
+    });
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+         modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }   
+});
 
 
 function show_pupil_form() {
-    document.getElementById("pupil_form").slideDown();
+    $("#pupil_form").slideDown();
 }
+
+var studentTab = $('.student-tab');
+var tutorTab = $('.tutor-tab');
+
+tutorTab.hide();
+studentTab.hide();
+
+$('.js-student-btn').click(function () {
+    tutorTab.slideUp(function (){
+        studentTab.slideDown();
+    });
+
+
+    $('html,body').animate({
+        scrollTop: $(".student-tab").offset().top},
+        'slow');
+
+});
+
+$('.js-tutor-btn').click(function () {
+    studentTab.slideUp(function (){
+        tutorTab.slideDown();
+    });
+
+
+    $('html,body').animate({
+        scrollTop: $(".tutor-tab").offset().top},
+        'slow');
+});
+
+})(jQuery); // End of use strict
+
+
+
+
+
+
