@@ -5894,10 +5894,10 @@ button.close {
           transform: translate(0, -25%);
 }
 .modal.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-       -o-transform: translate(0, 0);
-          transform: translate(0, 0);
+  -webkit-transform: translate(0, 25%);
+      -ms-transform: translate(0, 25%);
+       -o-transform: translate(0, 25%);
+          transform: translate(0, 25%);
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -5905,7 +5905,7 @@ button.close {
 }
 .modal-dialog {
   position: relative;
-  width: 300px;
+  width: 300px!important;
   margin: auto;
 }
 .modal-content {
@@ -5983,7 +5983,7 @@ button.close {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 300px;
+    width: 300px!important;
     margin: auto;
   }
   .modal-content {
@@ -5996,7 +5996,7 @@ button.close {
 }
 @media (min-width: 992px) {
   .modal-lg {
-    width: 900px;
+    width: 300px;
   }
 }
 .tooltip {
