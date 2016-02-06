@@ -5,6 +5,8 @@
  */
 
 (function($) {
+
+
     "use strict"; // Start of use strict
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -46,3 +48,8 @@
     new WOW().init();
 
 })(jQuery); // End of use strict
+
+
+function show_pupil_form() {
+    document.getElementById("pupil_form").slideDown();
+}
