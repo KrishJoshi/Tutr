@@ -5910,6 +5910,7 @@ button.close {
 }
 .modal-content {
   position: relative;
+  top:-200px;
   background-color: #fff;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
@@ -5925,6 +5926,12 @@ button.close {
        -o-transition: position 1s linear;
           transition: position 1s linear;        
           
+}
+
+
+.modal-content-moved
+{
+  top:200px;
 }
 .modal-backdrop {
   position: fixed;
