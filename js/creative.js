@@ -47,14 +47,41 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
-
-
-
-var $pupil_form = $('#pupil_form');
+var $tutor_form = $('#tutor_form');
 var modal = document.getElementById('myModal');
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+
+$tutor_form.submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+       url: "http://getsimpleform.com/messages/ajax?form_api_token=39c8f9e5a2de15ad63469475702522b9",
+        method: 'POST',
+        data: $(this).serialize(),
+        dataType: 'jsonp',
+        beforeSend: function() {
+        },
+        success: function(data) {
+            $('#myModal').modal();
+        },
+        error: function(err) {
+        }
+    });
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+         modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }   
+});
+
+var $pupil_form = $('#pupil_form');
 
 $pupil_form.submit(function(e) {
     e.preventDefault();
