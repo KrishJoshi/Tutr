@@ -56,7 +56,7 @@ var span = document.getElementsByClassName("close")[0];
 $tutor_form.submit(function(e) {
     e.preventDefault();
     $.ajax({
-       url: "http://getsimpleform.com/messages/ajax?form_api_token=39c8f9e5a2de15ad63469475702522b9",
+       url: "http://getsimpleform.com/messages/ajax?form_api_token=0b348998ebf29ed08a1151165c85c156",
         method: 'POST',
         data: $(this).serialize(),
         dataType: 'jsonp',
