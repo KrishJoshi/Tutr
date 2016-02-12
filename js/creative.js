@@ -65,7 +65,6 @@ $tutor_form.submit(function(e) {
         cache: false,
         contentType: false,
         processData: false,
-        dataType: 'jsonp',
         beforeSend: function() {
         },
         success: function(data) {
