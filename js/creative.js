@@ -53,11 +53,17 @@ var modal = document.getElementById('myModal');
 var span = document.getElementsByClassName("close")[0];
 
 $tutor_form.submit(function(e) {
+    var formData = new FormData($(this)[0]);
+
     e.preventDefault();
     $.ajax({
        url: "http://getsimpleform.com/messages/ajax?form_api_token=0b348998ebf29ed08a1151165c85c156",
         method: 'POST',
-        data: $(this).serialize(),
+        data: formData,
+        async: false,
+        cache: false,
+        contentType: false,
+        processData: false,
         dataType: 'jsonp',
         beforeSend: function() {
         },
@@ -79,7 +85,6 @@ $tutor_form.submit(function(e) {
         }
     }   
 });
-
 
 var $pupil_form = $('#pupil_form');
 
