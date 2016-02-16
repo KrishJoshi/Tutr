@@ -147,6 +147,14 @@ $('.js-tutor-btn').click(function () {
         'slow');
 });
 
+$('.thumbnail').click(function(){
+  	$('.modal-body').empty();
+  	var title = $(this).parent('a').attr("title");
+  	$('.modal-title').html(title);
+  	$($(this).parents('div').html()).appendTo('.modal-body');
+  	$('#lightbox-modal').modal({show:true});
+});
+
 })(jQuery); // End of use strict
 
 
