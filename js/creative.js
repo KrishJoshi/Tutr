@@ -65,8 +65,10 @@ $pupil_form.submit(function(e) {
         beforeSend: function() {
         },
         success: function(data) {
+            $('.modal-header').empty();
            	$('.modal-body').empty();
-           	$('.modal-body').text('WOOOOP')
+            $('.modal-header').text('	Success!');
+           	$('.modal-body').text('Thank's for you're interest, we'll be in touch with you shortly!');
             $('#myModal').modal();
         },
         error: function(err) {
