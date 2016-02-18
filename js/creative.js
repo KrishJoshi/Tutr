@@ -123,6 +123,10 @@ featuredTab.hide();
 
 $('.js-featured-btn').click(function () {
     featuredTab.slideToggle('slow');
+    
+    $('html,body').animate({
+        scrollTop: $(".featuredTab").offset().top},
+        'slow');
 
 });
 
