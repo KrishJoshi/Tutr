@@ -162,8 +162,8 @@ $('.js-tutor-btn').click(function () {
 
 $('.thumbnail').click(function(){
   	$('.modal-body').empty();
-  var title = $(this).parent('a').attr("title");
-  	$('.modal-title').html(title);
+  	var title = $(this).parent('a').attr("title");
+   $('.modal-header').text(title);
   	$($(this).parents('div').html()).appendTo('.modal-body');
   	$('.modal-body').append($($(this).parents('div').html()).text());
   	$('#myModal').modal({show:true});
