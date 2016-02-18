@@ -99,7 +99,10 @@ $tutor_form.submit(function(e) {
         beforeSend: function() {
         },
         success: function(data) {
-            $('#myModal').empty();
+            $('.modal-header').empty();
+           	$('.modal-body').empty();
+            $('.modal-header').text('	Success!');
+           	$('.modal-body').text('Thank's for you're interest, we'll be in touch with you shortly!');
             $('#myModal').modal();
         },
         error: function(err) {
@@ -171,7 +174,6 @@ $('.thumbnail').click(function(){
   	$('.modal-title').html(title);
   	$($(this).parents('div').html()).appendTo('.modal-body');
   	$('.modal-body').append($($(this).parents('div').html()).text());
-  	 
   	$('#lightbox-modal').modal({show:true});
 });
 
