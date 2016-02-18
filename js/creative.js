@@ -161,9 +161,11 @@ $('.js-tutor-btn').click(function () {
 });
 
 $('.thumbnail').click(function(){
-  	$('.modal-body').empty();
   	var title = $(this).parent('a').attr("title");
    $('.modal-header').text(title);
+   $('.modal-header').append('<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>');
+  	
+  	$('.modal-body').empty();
   	$($(this).parents('div').html()).appendTo('.modal-body');
   	$('.modal-body').append($($(this).parents('div').html()).text());
   	$('#myModal').modal({show:true});
