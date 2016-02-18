@@ -151,8 +151,7 @@ $('.thumbnail').click(function(){
   	$('.modal-body').empty();
   var title = $(this).parent('a').attr("title");
   	$('.modal-title').html(title);
-  var text = 	$($(this).parents('div').html()).value;
-  	$('text').appendTo('.modal-body');
+  	$($(this).parents('div').html()).appendTo('.modal-body');
   	$('#lightbox-modal').modal({show:true});
 });
 
