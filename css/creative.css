@@ -522,6 +522,7 @@
 
  .btn-primary,
  .js-student-btn,
+ .js-featured-btn,
  .js-tutor-btn{
  	border-color: #c71585;
  	color: #fff;
@@ -541,6 +542,11 @@
  .js-tutor-btn:active,
  .js-tutor-btn.focus,
  .js-tutor-btn.active,
+ .js-featued-btn:hover,
+ .js-featued-btn:focus,
+ .js-featued-btn:active,
+ .js-featued-btn.focus,
+ .js-featued-btn.active,
  .btn-primary:hover,
  .btn-primary:focus,
  .btn-primary.focus,
