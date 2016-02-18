@@ -65,11 +65,7 @@ $pupil_form.submit(function(e) {
         beforeSend: function() {
         },
         success: function(data) {
-            $('.modal-header').empty();
-           	$('.modal-body').empty();
-            $('.modal-header').text('	Success!');
-           	$('.modal-body').text("Thank's for you're interest, we'll be in touch with you shortly!");
-            $('#myModal').modal();
+         submitSuccess();
         },
         error: function(err) {
             $pupil_form.append('<div class="alert alert--error">Ops, there was an error.</div>');
@@ -99,11 +95,7 @@ $tutor_form.submit(function(e) {
         beforeSend: function() {
         },
         success: function(data) {
-            $('.modal-header').empty();
-           	$('.modal-body').empty();
-            $('.modal-header').text('	Success!');
-           	$('.modal-body').text("Thank's for you're interest, we'll be in touch with you shortly!");
-            $('#myModal').modal();
+           submitSuccess();
         },
         error: function(err) {
             $tutor_form.append('<div class="alert alert--error">Ops, there was an error.</div>');
@@ -177,6 +169,14 @@ $('.thumbnail').click(function(){
   	$('#lightbox-modal').modal({show:true});
 });
 
+
+function submitSuccess(){
+            $('.modal-header').empty();
+           	$('.modal-body').empty();
+            $('.modal-header').text('	Success!');
+           	$('.modal-body').text("Thank's for you're interest, we'll be in touch with you shortly!");
+            $('#myModal').modal();
+}
 
 
 })(jQuery); // End of use strict
