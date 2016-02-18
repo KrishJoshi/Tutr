@@ -149,7 +149,7 @@ $('.js-tutor-btn').click(function () {
 
 $('.thumbnail').click(function(){
   	$('.modal-body').empty();
-  	var title = $(this).parent('a').attr("title");
+  	var title = $(this).nextSibling;
   	$('.modal-title').html(title);
   	$($(this).parents('div').html()).appendTo('.modal-body');
   	$('#lightbox-modal').modal({show:true});
