@@ -97,6 +97,7 @@ $tutor_form.submit(function(e) {
         beforeSend: function() {
         },
         success: function(data) {
+            $('#myModal').empty();
             $('#myModal').modal();
         },
         error: function(err) {
