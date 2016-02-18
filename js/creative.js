@@ -122,11 +122,8 @@ var featuredTab = $('.featured-tutors');
 featuredTab.hide();
 
 $('.js-featured-btn').click(function () {
-    featuredTab.slideToggle(slow);
+    featuredTab.slideToggle('slow');
 
-    $('html,body').animate({
-        scrollTop: $(".featuredTab").offset().top},
-        'slow');
 });
 
 var studentTab = $('.student-tab');
