@@ -173,6 +173,7 @@ $('.thumbnail').click(function(){
 function submitSuccess(){
            	$('.modal-body').empty();
             $('.modal-header').text('	Success!');
+            $('.modal-header').append('<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>');
            	$('.modal-body').text("Thank's for you're interest, we'll be in touch with you shortly!");
             $('#myModal').modal();
 }
