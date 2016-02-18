@@ -161,7 +161,7 @@ $('.js-tutor-btn').click(function () {
 });
 
 $('.thumbnail').click(function(){
-  	$('#lightbox-modal > div > div > .modal-body').empty();
+  	$('.modal-body').empty();
   var title = $(this).parent('a').attr("title");
   	$('.modal-title').html(title);
   	$($(this).parents('div').html()).appendTo('.modal-body');
