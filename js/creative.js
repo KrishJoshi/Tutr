@@ -122,7 +122,7 @@ var featuredTab = $('.featured-tutors');
 featuredTab.hide();
 
 $('.js-featured-btn').click(function () {
-    featuredTab.slideToggle();
+    featuredTab.slideToggle(slow);
 
     $('html,body').animate({
         scrollTop: $(".featuredTab").offset().top},
