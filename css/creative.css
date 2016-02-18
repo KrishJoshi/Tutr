@@ -159,6 +159,7 @@
  #Our_tutors {
  	background-color: #b3b3b3;
  	min-height: 585px;
+ 	padding-bottom: 0;
  }
 
  .bg-dark {
