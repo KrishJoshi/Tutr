@@ -166,7 +166,7 @@ $('.thumbnail').click(function(){
   	$('.modal-title').html(title);
   	$($(this).parents('div').html()).appendTo('.modal-body');
   	$('.modal-body').append($($(this).parents('div').html()).text());
-  	$('#lightbox-modal').modal({show:true});
+  	$('#myModal').modal({show:true});
 });
 
 
