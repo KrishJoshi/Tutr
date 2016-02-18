@@ -118,11 +118,23 @@ function show_pupil_form() {
     $("#pupil_form").slideDown();
 }
 
+var featuredTab = $('.featured-tutors');
+featuredTab.hide();
+
+$('.js-featured-btn').click(function () {
+    featuredTab.slideToggle();
+
+    $('html,body').animate({
+        scrollTop: $(".featuredTab").offset().top},
+        'slow');
+});
+
 var studentTab = $('.student-tab');
 var tutorTab = $('.tutor-tab');
-
 tutorTab.hide();
 studentTab.hide();
+
+
 
 $('.js-student-btn').click(function () {
     tutorTab.slideUp(function (){
