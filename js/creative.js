@@ -122,11 +122,11 @@ var featuredTab = $('.featured-tutors');
 featuredTab.hide();
 
 $('.js-featured-btn').click(function () {
-    featuredTab.slideToggle('slow');
+    featuredTab.slideToggle('slow', 'swing');
     
     $('html,body').animate({
         scrollTop: $(".featuredTab").offset().top},
-        'slow');
+        'slow', 'swing');
 
 });
 
