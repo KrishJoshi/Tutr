@@ -65,6 +65,8 @@ $pupil_form.submit(function(e) {
         beforeSend: function() {
         },
         success: function(data) {
+           	$('.modal-body').empty();
+           	$('.modal-body').text('WOOOOP')
             $('#myModal').modal();
         },
         error: function(err) {
