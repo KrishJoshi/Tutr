@@ -152,13 +152,12 @@
 
  .bg-primary {
  	background-color: #fff;
- 	color: #000;
+ 	color: #333333;
  	min-height: 565px;
  }
 
  #Our_students {
  	background-color: #cccccc;
-  color: #fff;
  	min-height: 585px;
  	padding-bottom: 0;
  }
