@@ -78,7 +78,7 @@
 
  hr.tertiary {
  	max-width: 50px;
- 	border-color: #B3B3B3;
+ 	border-color: #d9d9d9;
  	border-width: 3px;
  }
 
@@ -157,7 +157,7 @@
  }
 
  #Our_students {
- 	background-color: #cccccc;
+ 	background-color: #d9d9d9;
  	min-height: 585px;
  	padding-bottom: 0;
  }
