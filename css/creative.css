@@ -152,7 +152,7 @@
 
  .bg-primary {
  	background-color: #fff;
- 	color: #333;
+ 	color: #000;
  	min-height: 565px;
  }
 
@@ -165,7 +165,7 @@
 
 
  #Our_tutors {
- 	background-color: #b3b3b3;
+ 	background-color: #999999;
  	min-height: 585px;
  	padding-bottom: 0;
  }
