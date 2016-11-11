@@ -156,6 +156,14 @@
  	min-height: 565px;
  }
 
+ #Our_students {
+ 	background-color: #cccccc;
+ 	min-height: 585px;
+ 	padding-bottom: 0;
+ }
+
+
+
  #Our_tutors {
  	background-color: #b3b3b3;
  	min-height: 585px;
