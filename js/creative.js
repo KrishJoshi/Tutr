@@ -58,7 +58,7 @@ var span = document.getElementsByClassName("close")[0];
 $pupil_form.submit(function(e) {
     e.preventDefault();
     $.ajax({
-        url: '//formspree.io/contact@tutr.london',
+        url: '//formspree.io/melpjackson@gmail.com',
         method: 'POST',
         data: $(this).serialize(),
         dataType: 'json',
@@ -88,7 +88,7 @@ $pupil_form.submit(function(e) {
 $tutor_form.submit(function(e) {
     e.preventDefault();
     $.ajax({
-        url: '//formspree.io/contact@tutr.london',
+        url: '//formspree.io/melpjackson@gmail.com',
         method: 'POST',
         data: $(this).serialize(),
         dataType: 'json',
