@@ -125,7 +125,7 @@ featuredTab.hide();
 featuredTab.slideDown();
 });
     $('html,body').animate({
-        scrollTop: $(".featuredTab").offset().top},
+        scrollBottom: $(".featuredTab").offset().top},
         'slow');
 
 
