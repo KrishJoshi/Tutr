@@ -120,13 +120,8 @@ function show_pupil_form() {
 
 var featuredTab = $('.featured-tutors');
 featuredTab.hide();
+featuredTab.slideDown();
 
-$('.js-featured-btn').click(function () {
-    featuredTab.slideToggle('slow', 'swing');
-    
-    $('html,body').animate({
-        scrollTop: $(".featuredTab").offset().bottom},
-        'slow', 'swing');
 
 });
 
