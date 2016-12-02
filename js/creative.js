@@ -114,12 +114,9 @@ $tutor_form.submit(function(e) {
     }   
 });
 
-function show_pupil_form() {
-    $("#pupil_form").slideDown();
-}
+
 
 var featuredTab = $('.featured-tutors');
-featuredTab.hide();
   
 $('.js-featured-btn').click(function () {
     featuredTab.slideToggle('slow');
