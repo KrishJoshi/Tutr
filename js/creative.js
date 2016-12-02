@@ -121,10 +121,13 @@ function show_pupil_form() {
 var featuredTab = $('.featured-tutors');
 featuredTab.hide();
   
-
+$('.js-featured-btn').click(function () {
+    featuredTab.slideToggle('slow');
+    
     $('html,body').animate({
-        scrollBottom: $(".featuredTab").offset().top},
-        'slow');
+        scrollTop: $(".featuredTab").offset().bottom},
+        'slow', 'swing');
+
 
 
 var studentTab = $('.student-tab');
