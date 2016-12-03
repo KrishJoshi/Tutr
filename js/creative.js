@@ -165,7 +165,7 @@ $('.thumbnail').click(function(){
   	
   	$('.modal-text').empty();
  
-   var ksp_table = document.getElementById('ksp');
+   var ksp_table = document.getElementById("ksp");
    $('.modal-text').append(ksp_table);
  
    $('.modal-body').empty();
