@@ -123,8 +123,8 @@ featuredTab.hide();
 
 $('.js-featured-btn').click(function () {
     featuredTab.slideToggle('slow', 'swing');
-    
-
+ 
+location.href="#tutor_gallery"
 
 });
 
