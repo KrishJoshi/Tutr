@@ -164,11 +164,12 @@ $('.thumbnail').click(function(){
    $('.modal-header').append('<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>');
   	
   	$('.modal-text').empty();
-   $('.modal-body').empty();
- var test =$(this).parents('div').html();
- 
-  	$(test).appendTo('.modal-text');
+   document.getElementById('ksp').appendChild(element);
   	$('.modal-text').append($($(this).parents('div').html()).text());
+ 
+   $('.modal-body').empty();
+  var test =$(this).parents('div').html();
+  	$(test).appendTo('.modal-text');
   	$('#myModal').modal({show:true});
 });
 
