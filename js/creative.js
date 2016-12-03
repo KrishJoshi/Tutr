@@ -164,8 +164,7 @@ $('.thumbnail').click(function(){
    $('.modal-header').append('<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>');
   	
   	$('.modal-body').empty();
- var test =$(this).parents('div').html()
-test.style.float='right';
+ var test =$(this).parents('div').html();
  
   	$(test).appendTo('.modal-body');
   	$('.modal-body').append($($(this).parents('div').html()).text());
