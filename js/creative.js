@@ -163,11 +163,11 @@ $('.thumbnail').click(function(){
    $('.modal-header').text(title);
    $('.modal-header').append('<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>');
   	
-  	$('.modal-body').empty();
+  	$('.modal-text').empty();
  var test =$(this).parents('div').html();
  
-  	$(test).appendTo('.modal-body');
-  	$('.modal-body').append($($(this).parents('div').html()).text());
+  	$(test).appendTo('.modal-text');
+  	$('.modal-text').append($($(this).parents('div').html()).text());
   	$('#myModal').modal({show:true});
 });
 
