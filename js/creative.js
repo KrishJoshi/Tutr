@@ -164,9 +164,11 @@ $('.thumbnail').click(function(){
    $('.modal-header').append('<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>');
   	
   	$('.modal-body').empty();
-  	$($(this).parents('div').html()).appendTo('.modal-body');
+ var test =$(this).parents('div').html()
+test.style.float='right';
+ 
+  	$(test).appendTo('.modal-body');
   	$('.modal-body').append($($(this).parents('div').html()).text());
-   document.getElementbyId('jul').appendChild(element);
   	$('#myModal').modal({show:true});
 });
 
