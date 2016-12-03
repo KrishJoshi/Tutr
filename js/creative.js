@@ -73,7 +73,7 @@ $pupil_form.submit(function(e) {
     });
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
-         modal.style.display = "none";
+         modal.style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it
@@ -103,7 +103,7 @@ $tutor_form.submit(function(e) {
     });
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
-         modal.style.display = "none";
+         modal.style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it
@@ -114,17 +114,20 @@ $tutor_form.submit(function(e) {
     }   
 });
 
-
+function show_pupil_form() {
+    $("#pupil_form").slideDown();
+}
 
 var featuredTab = $('.featured-tutors');
+featuredTab.hide();
   
-$('.js-featured-btn').click(function () {
-    featuredTab.slideToggle('slow');
-    
+  $('.js-featured-btn').click(function () {
+featuredTab.slideDown();
+   window.scrollBy(0, 100);
+});
     $('html,body').animate({
-        scrollTop: $(".featuredTab").offset().bottom},
-        'slow', 'swing');
-
+        scrollBottom: $(".featuredTab").offset().top},
+        'slow');
 
 
 var studentTab = $('.student-tab');
@@ -179,9 +182,6 @@ function submitSuccess(){
 
 
 })(jQuery); // End of use strict
-
-
-
 
 
 
