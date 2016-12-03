@@ -166,6 +166,7 @@ $('.thumbnail').click(function(){
   	$('.modal-body').empty();
   	$($(this).parents('div').html()).appendTo('.modal-body');
   	$('.modal-body').append($($(this).parents('div').html()).text());
+   document.getElementbyId('jul').appendChild(element);
   	$('#myModal').modal({show:true});
 });
 
