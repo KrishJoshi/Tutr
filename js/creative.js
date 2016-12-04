@@ -160,6 +160,7 @@ $('.js-tutor-btn').click(function () {
 
 $('.thumbnail').click(function(){
   	var title = $(this).parent('a').attr("title");
+   title.css({"font-weight": "bold"}); 
    $('.modal-header').text(title);
    $('.modal-header').append('<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>');
   	
