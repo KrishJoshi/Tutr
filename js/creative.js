@@ -172,11 +172,12 @@ $('.thumbnail').click(function(){
  //  var newTr = $("#julTable").clone().show();
 var newTr =  $(this).siblings("table").clone().show();
    
- //  newTr.style.visibility ="visible";
+
     newTr.css({"width": "200px", "height":"300px", "position": "absolute", "top":"10px","right":"10px" });
     newTr.appendTo($(".modal-body"));
  
-  	$('.modal-text').append($($(this).siblings('p').html()).text());
+ 
+  	$('.modal-text').append($($(.thumbnail).siblings("p").html()).text());
   	$('#myModal').modal({show:true});
 });
 
