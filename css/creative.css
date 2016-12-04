@@ -635,6 +635,10 @@
  	background: 0 0;
  }
 
+modal-text {
+ padding:5px;
+}
+
  body {
  	webkit-tap-highlight-color: #222;
  }
