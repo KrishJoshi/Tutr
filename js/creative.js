@@ -177,6 +177,9 @@ $('.thumbnail').click(function(){
     var newTr2 =  $(this).siblings("p").clone().show();
    newTr2.appendTo($(".modal-text"));
   	$('#myModal').modal({show:true});
+ 
+ $('.modal-content').css({"background-color":"#d9d9d9"});
+ 
 });
 
 
