@@ -166,8 +166,9 @@ $('.thumbnail').click(function(){
   	$('.modal-text').empty();
  
    $('.modal-body').empty();
-   var test =$(this).parents('div').html();
-  	$(test).appendTo('.modal-body');
+  	$('.modal-body').empty();
+  	$($(this).parents('div').html()).appendTo('.modal-body');
+  	$('.modal-body').append($($(this).parents('div').html()).text());
   	$('#myModal').modal({show:true});
 });
 
