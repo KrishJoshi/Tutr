@@ -182,7 +182,12 @@ $('.thumbnail').click(function(){
   $('.modal-content').css({"background-color":"#d9d9d9"});
   $('.modal-body').css({"padding-left":"15px","padding-right":"15px",
                         "padding-top":"10px", "padding-bottom":"0px",
-                       "border-bottom":"#bbbbbb 3px solid"});
+                       "border-bottom":"#bbbbbb 3px solid", 
+                       "border-top":"#bbbbbb 3px solid"});
+   $('.modal-text').css({"padding-left":"15px","padding-right":"15px",
+                        "padding-top":"15px", "padding-bottom":"0px",
+                       "border-top":"#cccccc 3px solid"});
+    $('.modal-header').css({"border-bottom":"#cccccc 3px solid"});
 });
 
 
