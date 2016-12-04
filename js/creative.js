@@ -178,8 +178,11 @@ $('.thumbnail').click(function(){
    newTr2.appendTo($(".modal-text"));
   	$('#myModal').modal({show:true});
  
- $('.modal-content').css({"background-color":"#d9d9d9"});
- 
+
+  $('.modal-content').css({"background-color":"#d9d9d9"});
+  $('.modal-body').css({"padding-left":"15px","padding-right":"15px",
+                        "padding-top":"10px", "padding-bottom":"0px",
+                       "border-bottom":"#bbbbbb 3px solid"});
 });
 
 
