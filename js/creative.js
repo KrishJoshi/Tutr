@@ -171,7 +171,7 @@ $('.thumbnail').click(function(){
  
     var newTr = $("#julTable").clone().show();
   //  newTr.style.visibility ="visible";
-    newTr.css({"float": "right" "font-size": "70%"});
+    newTr.css({"float": "right", "font-size": "70%"});
     newTr.appendTo($(".modal-body"));
  
   	$('.modal-text').empty();
