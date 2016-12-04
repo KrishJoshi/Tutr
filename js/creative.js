@@ -170,7 +170,7 @@ $('.thumbnail').click(function(){
  
  
     var newTr = $("#julTable").clone();
-    newTr.style.visibility = "visible";
+  //  newTr.style.visibility ="visible";
     newTr.appendTo($(".modal-body"));
  
   	$('.modal-text').empty();
