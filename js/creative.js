@@ -175,7 +175,7 @@ $('.thumbnail').click(function(){
     newTr.appendTo($(".modal-body"));
  
  
-  	$($(this).sibling('p').html()).appendTo('.modal-text');
+  	$($('.thumbnail').sibling('p').html()).appendTo('.modal-text');
  
   	$('#myModal').modal({show:true});
 });
