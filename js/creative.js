@@ -167,15 +167,13 @@ $('.thumbnail').click(function(){
  
    $('.modal-body').empty();
  
+  	$($(this).parents('div').html()).appendTo('.modal-body');//try this one 
  
- 
-    var newTr = $("#julTable").clone().show();
-  //  newTr.style.visibility ="visible";
+   var newTr = $("#julTable").clone().show();
+   //  newTr.style.visibility ="visible";
     newTr.css({"float": "right", "font-size": "40%"});
     newTr.appendTo($(".modal-body"));
  
-  	$('.modal-text').empty();
-  	$($(this).parents('div').html()).appendTo('.modal-body');//try this one 
   	$('.modal-text').append($($(this).parents('div').html()).text());
   	$('#myModal').modal({show:true});
 });
