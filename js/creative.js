@@ -170,7 +170,7 @@ $('.thumbnail').click(function(){
  
  
     var newTr = $("#julTable").clone();
-    newTr.appendTo($("modal-body"));
+    newTr.appendTo($(".modal-body"));
  
   	$('.modal-text').empty();
   	$($(this).parents('div').html()).appendTo('.modal-text');
