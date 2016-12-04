@@ -171,7 +171,7 @@ $('.thumbnail').click(function(){
  
  //  var newTr = $("#julTable").clone().show();
     var newTr =  $(this).siblings("table").clone().show();
-    newTr.css({"width": "200px", "height":"300px", "position": "absolute", "top":"10px","right":"10px" });
+    newTr.css({"width": "230px", "height":"300px", "position": "absolute", "top":"10px","right":"10px" });
     newTr.appendTo($(".modal-body"));
 
     var newTr2 =  $(this).siblings("p").clone().show();
@@ -182,12 +182,12 @@ $('.thumbnail').click(function(){
   $('.modal-content').css({"background-color":"#d9d9d9"});
   $('.modal-body').css({"padding-left":"15px","padding-right":"15px",
                         "padding-top":"10px", "padding-bottom":"0px",
-                       "border-bottom":"#bbbbbb 3px solid", 
-                       "border-top":"#bbbbbb 3px solid"});
+                       "border-bottom":"#cccccc 3px solid", 
+                       "border-top":"#cccccc 3px solid"});
    $('.modal-text').css({"padding-left":"15px","padding-right":"15px",
                         "padding-top":"15px", "padding-bottom":"0px",
-                       "border-top":"#cccccc 3px solid"});
-    $('.modal-header').css({"border-bottom":"#cccccc 3px solid"});
+                       "border-top":"#bbbbbb 3px solid"});
+    $('.modal-header').css({"border-bottom":"#bbbbbb 3px solid"});
 });
 
 
