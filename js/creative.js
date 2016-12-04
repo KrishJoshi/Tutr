@@ -174,7 +174,8 @@ $('.thumbnail').click(function(){
     newTr.css({"width": "200px", "height":"300px", "position": "absolute", "top":"10px","right":"10px" });
     newTr.appendTo($(".modal-body"));
  
-    var desc =  $(".thumbnail").siblings("p").appendTo($(".modal-text"));
+ 
+  	$($(this).sibling('p').html()).appendTo('.modal-text');
  
   	$('#myModal').modal({show:true});
 });
