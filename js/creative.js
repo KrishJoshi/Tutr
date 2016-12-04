@@ -170,7 +170,7 @@ $('.thumbnail').click(function(){
   	$($(this).parents('div').html()).appendTo('.modal-body');//try this one 
  
  //  var newTr = $("#julTable").clone().show();
-var newTr =  $(this).nextAll().parent('table').clone().show();
+var newTr =  $(this).siblings("table").clone().show();
    
  //  newTr.style.visibility ="visible";
     newTr.css({"width": "200px", "position": "absolute", "top":"10px","right":"10px" });
