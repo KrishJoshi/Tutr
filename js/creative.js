@@ -170,6 +170,7 @@ $('.thumbnail').click(function(){
  
  
     var newTr = $("#julTable").clone().show();
+    newTr.style.cssFloat = "right";
   //  newTr.style.visibility ="visible";
     newTr.appendTo($(".modal-body"));
  
