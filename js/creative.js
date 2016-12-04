@@ -173,7 +173,7 @@ $('.thumbnail').click(function(){
 var newTr =  $(this).siblings("table").clone().show();
    
  //  newTr.style.visibility ="visible";
-    newTr.css({"width": "200px", "position": "absolute", "top":"10px","right":"10px" });
+    newTr.css({"width": "200px", "height":"300px", "position": "absolute", "top":"10px","right":"10px" });
     newTr.appendTo($(".modal-body"));
  
   	$('.modal-text').append($($(this).parents('div').html()).text());
