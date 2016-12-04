@@ -176,7 +176,7 @@ var newTr =  $(this).siblings("table").clone().show();
     newTr.css({"width": "200px", "height":"300px", "position": "absolute", "top":"10px","right":"10px" });
     newTr.appendTo($(".modal-body"));
  
-  	$('.modal-text').append($($(this).parents('div').html()).text());
+  	$('.modal-text').append($($(this).parents('p').html()).text());
   	$('#myModal').modal({show:true});
 });
 
