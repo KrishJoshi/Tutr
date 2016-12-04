@@ -172,9 +172,10 @@ $('.thumbnail').click(function(){
  //  var newTr = $("#julTable").clone().show();
     var newTr =  $(this).siblings("table").clone().show();
     newTr.css({"width": "200px", "height":"300px", "position": "absolute", "top":"10px","right":"10px" });
+    newTr.appendTo($(".modal-body"));
  
     var desc =  $(this).siblings("p").clone().show();
-    newTr.appendTo($(".modal-body"));
+    desc.appendTo($(".modal-text"));
  
   	$('#myModal').modal({show:true});
 });
