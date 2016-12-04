@@ -166,6 +166,12 @@ $('.thumbnail').click(function(){
   	$('.modal-text').empty();
  
    $('.modal-body').empty();
+ 
+ 
+ 
+    var newTr = $("#julTable").clone();
+    newTr.appendTo($("modal-body"));
+ 
   	$('.modal-text').empty();
   	$($(this).parents('div').html()).appendTo('.modal-text');
   	$('.modal-text').append($($(this).parents('div').html()).text());
