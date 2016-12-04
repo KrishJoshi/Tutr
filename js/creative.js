@@ -173,10 +173,9 @@ $('.thumbnail').click(function(){
     var newTr =  $(this).siblings("table").clone().show();
     newTr.css({"width": "200px", "height":"300px", "position": "absolute", "top":"10px","right":"10px" });
     newTr.appendTo($(".modal-body"));
- 
- 
-  	$($('.thumbnail').sibling('p').html()).appendTo('.modal-text');
- 
+
+    var newTr2 =  $(this).siblings("p").clone().show();
+   newTr2.appendTo($(".modal-text"));
   	$('#myModal').modal({show:true});
 });
 
