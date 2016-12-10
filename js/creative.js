@@ -171,7 +171,7 @@ $('.thumbnail').click(function(){
  
  //  var newTr = $("#julTable").clone().show();
     var newTr =  $(this).siblings("table").clone().show();
-    newTr.css({"width": "200px", "height":"300px", "position": "absolute", "top":"2px","right":"10px" });
+    newTr.css({"width": "200px", "height":"300px", "position": "absolute", "top":"-5px","right":"10px" });
     newTr.appendTo($(".modal-body"));
 
     var newTr2 =  $(this).siblings("p").clone().show();
