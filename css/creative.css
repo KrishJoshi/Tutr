@@ -636,7 +636,11 @@
  }
 
 modal-text {
- padding:5px;
+   padding-left:15px;
+   padding-right:15px;
+   padding-top:15px; 
+   padding-bottom:0px;
+   border-top: #bbbbbb 3px solid;
 }
 
  body {
