@@ -168,12 +168,9 @@ $('.thumbnail').click(function(){
    $('.modal-body').empty();
  
   	$($(this).parents('div').html()).appendTo('.modal-body');//try this one 
- 
- if (document.documentElement.clientWidth > 650) {
-	    var newTr =  $(this).siblings("table").clone().show();
+    var newTr =  $(this).siblings("table").clone().show();
     newTr.css({"width": "200px", "height":"300px", "position": "absolute", "top":"-10px","right":"10px" });
-    newTr.appendTo($(".modal-body"));
- }  
+    newTr.appendTo($(".modal-body")); 
  
 
     var newTr2 =  $(this).siblings("p").clone().show();
