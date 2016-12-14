@@ -186,9 +186,9 @@ $('.thumbnail').click(function(){
                         "padding-top":"10px", "padding-bottom":"0px",
                        "border-bottom":"#cccccc 3px solid", 
                        "border-top":"#cccccc 3px solid"});
-   $('.modal-text').css({"padding-left":"15px","padding-right":"15px",
-                        "padding-top":"15px", "padding-bottom":"0px",
-                       "border-top":"#bbbbbb 3px solid"});
+   //$('.modal-text').css({"padding-left":"15px","padding-right":"15px",
+   //                     "padding-top":"15px", "padding-bottom":"0px",
+    //                   "border-top":"#bbbbbb 3px solid"});
     $('.modal-header').css({"border-bottom":"#bbbbbb 3px solid"});
 });
 
